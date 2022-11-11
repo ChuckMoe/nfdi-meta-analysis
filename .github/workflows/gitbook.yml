@@ -1,0 +1,12 @@
+name: Build and Publish My GitBook
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-deploy:
+    name: Build and Publish GitBook
+    uses: onejar99/gitbook-build-publish-action@v1.0.2
